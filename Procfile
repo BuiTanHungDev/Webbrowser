@@ -1,0 +1,1 @@
+web: gunicorn laptrinhmang4.wsgi --log-file -

@@ -1,0 +1,232 @@
+
+
+<head>
+        <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&id=11lRxRGOiHcaYPmzHPX7AbAgb9D7R7GNL">
+</head>
+<body>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+                font-size: 10pt;
+                font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+                text-decoration: none;
+        }
+
+        a:hover {
+                text-decoration: underline;
+        }
+
+        button {
+                font-weight: bold;
+                font-family: 'Poppins', sans-serif;
+        }
+
+
+        /* Top Toolbar */
+
+        .top-toolbar {
+                height: 50px;
+        }
+
+        .top-toolbar nav {
+                float:right;
+                margin: 7px 21px;
+        }
+
+        .top-toolbar nav a button{
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+
+        }
+
+        .top-toolbar nav a {
+                margin: 3px 6px;
+                color: #FFF;
+        }
+
+        .top-toolbar nav a:hover {
+                color: #111111;
+        }
+
+        .top-toolbar nav button {
+                padding: 7px 12px;
+                border-radius: 2px;
+                /* background-color: #4585F1;*/
+                background-image: -moz-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+                background-image: -o-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+                background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #4585F1), color-stop(1, #0097DE));
+                background-image: -webkit-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+                color: white;
+                border: 1px darkblue;
+                font-size: 9.5pt;
+        }
+
+        .top-toolbar nav button:hover {
+                box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+        }
+
+        .top-toolbar nav img {
+                margin: 0 7.5px;
+                height: 22px;
+                position: relative;
+                top: 7px;}
+
+        /* End of Top Toolbar */
+        /* Search */
+
+        .search {
+                text-align: center;
+                clear: both;
+                margin: 11% 0 0 0;
+        }
+
+        .logo {
+                max-width: 20%;
+                margin: 0 auto;
+        }
+
+        .search img {
+                margin-bottom: 3%;
+                max-width: 100%;
+        }
+
+        .search input {
+              width: 50%;
+              height: 26px;
+              margin: 0 auto;
+              margin-top:10px;
+              border: none;
+              border:solid 1px #ccc;
+              border-radius: 10px;
+        }
+
+        .search-bar {
+                max-width: 80%;
+        }
+
+        .search input:focus {
+                outline: none;
+                border: 2px solid #4285F4;
+        }
+
+        .search button {
+                margin: 14px 7px 0 5px;
+                padding: 7px 8px;
+                border-radius: 20px;
+                border: 1px solid #D0D0D0;
+                color: #444444;
+                background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+                background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);
+        }
+
+        .search button:hover {
+                box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+                cursor: pointer;
+        }
+
+        /* End of Search */
+        /* Footer */
+
+        footer {
+                position: fixed;
+                bottom: 0;
+                height: 42px;
+                width: 100%;
+                font-size: 9.5pt;
+                background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+                background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+                background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);
+        }
+
+        .footer-left {
+                float: left;
+                margin-left: 16px;
+        }
+
+        .footer-right {
+                float: right;
+                margin-right: 16px;
+        }
+
+        footer nav {
+                display: inline-block;
+                padding: 15px 0 0 0;
+        }
+
+        footer nav a {
+                padding: 3px 14px;
+                color: #646464;
+        }
+
+        footer nav a:hover {
+                color: #000000;
+        }
+
+        /* End of Footer */
+
+        @media screen and (max-width: 510px) {
+                .top-toolbar nav a:nth-child(2), a:nth-child(3), footer {
+                display:none;
+        }
+
+        .logo {
+                max-width: 40%;
+        }
+}
+</style>
+
+<body>
+    
+    <div class="top-toolbar">
+        <nav>
+                <a href="#"></a>
+                <a href="#" style="color:black";>Gmail</a>
+                <a href="#" style="color:black;">Images</a>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HY3t1QWIt7n0lMr4dFAAvsrSwjoRmuvV2Q&usqp=CAU" alt="Sign In" />
+                <a href="#"><button class="signin">Sign In</button></a>
+        </nav>
+    </div>
+    <div class="search">
+        <div class="logo">
+                <img src="data:image/png;base64,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"alt="home" />
+        </div>
+        <form method="POST" action="search">
+        {% csrf_token %}
+                <input class="search-bar" type="text" name="search" autofocus x-webkit-speech/>
+                <div class="search-nav">
+                        <div class="search-button">
+                                <a href="#"><button type="submit">Search</button></a>
+    </form>
+
+    </div>
+    </div>
+    </div>
+
+    {% if final_result %}
+    <b style="padding-left: 50px; padding-right: 50px; color: #646464;">Results
+    </b>
+
+    {% for result in final_result %}
+    <div style="padding-left: 50px; padding-right: 50px;">
+        <h3 style="color: blue;">
+            <a href="{{ result.1 }}">{{ result.0 }}</a>
+        </h3>
+        <h3 style="color: green;">{{ result.1 }}</h3>
+        <h3>{{ result.2 }}</h3>
+    </div><br><br>
+    {% endfor %}
+    {% endif %}
+
+    
+</body>
